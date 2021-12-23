@@ -35,7 +35,7 @@ jobs:
                 git config --global user.email "519248932@qq.com"
                 git config --global user.name "Bennyli"
                 git checkout gh-pages
-                git reset --hard origin/main
+                git reset --hard origin/master
                 npm run docs:build
                 git add .
                 git commit -m "auto build by CircleCI"
