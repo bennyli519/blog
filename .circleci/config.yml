@@ -36,7 +36,6 @@ jobs:
                 git config --global user.email "519248932@qq.com"
                 git config --global user.name "bennyli519"
                 cd docs/.vuepress/dist
-                git init
                 git add -A
                 git commit -m "auto build by CircleCI"
                 git push -f git@github.com:bennyli519/blog.git master:gh-pages
