@@ -30,14 +30,13 @@ jobs:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
       - run:
-          name: Build docs
-          command: npm run docs:build
-      - run:
-          name: push dist to gh-pages
+          name: Build and push dist to gh-pages
           command: |
                 git config --global user.email "519248932@qq.com"
                 git config --global user.name "Bennyli"
-                git checkout -b gh-pages
+                git checkout gh-pages
+                git reset --hard origin/main
+                npm run docs:build
                 git add .
                 git commit -m "auto build by CircleCI"
                 git push --set-upstream origin gh-pages
