@@ -37,10 +37,9 @@ jobs:
           command: |
                 git config --global user.email "519248932@qq.com"
                 git config --global user.name "bennyli"
-                git checkout gh-pages
-                git reset --hard origin/master
                 git add .
                 git commit -m "auto build by CircleCI"
+                git checkout gh-pages
                 git push -f --set-upstream origin gh-pages 
 
 workflows:
