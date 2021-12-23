@@ -37,9 +37,9 @@ jobs:
           command: |
                 git config --global user.email "519248932@qq.com"
                 git config --global user.name "Bennyli"
+                git checkout -b gh-pages
                 git add .
                 git commit -m "auto build by CircleCI"
-                git checkout gh-pages
                 git push
 
 workflows:
