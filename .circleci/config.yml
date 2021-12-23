@@ -40,7 +40,7 @@ jobs:
                 git checkout -b gh-pages
                 git add .
                 git commit -m "auto build by CircleCI"
-                git push
+                git push --set-upstream origin gh-pages
 
 workflows:
   # Below is the definition of your workflow.
