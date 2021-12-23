@@ -23,12 +23,25 @@ jobs:
       - checkout
       # Next, the node orb's install-packages step will install the dependencies from a package.json.
       # The orb install-packages step will also automatically cache them for faster future runs.
+      - add_ssh_keys:
+          fingerprints:
+          - 61:ba:eb:39:88:89:46:06:08:62:3d:65:fa:78:40:5f
       - node/install-packages:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
       - run:
-          name: Build DOCS
+          name: Build docs
           command: npm run docs:build
+      - run:
+          name: push dist to gh-pages
+          command: |
+                git config --global user.email "519248932@qq.com"
+                git config --global user.name "bennyli"
+                git checkout gh-pages
+                git reset --hard origin/master
+                git add .
+                git commit -m "auto build by CircleCI"
+                git push -f --set-upstream origin gh-pages 
 
 workflows:
   # Below is the definition of your workflow.
