@@ -35,6 +35,8 @@ jobs:
       - run:
           name: push dist to gh-pages
           command: |
+                git config --global user.email "519248932@qq.com"
+                git config --global user.name "Bennyli"
                 git add .
                 git commit -m "auto build by CircleCI"
                 git checkout gh-pages
