@@ -29,18 +29,18 @@ jobs:
       - node/install-packages:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
+      - run: npm run docs:build
       - run:
           name: Build and push dist to gh-pages
           command: |
                 git config --global user.email "519248932@qq.com"
                 git config --global user.name "Bennyli"
-                git checkout gh-pages
-                git reset --hard origin/master
-                npm run docs:build
-                git add .
+                cd docs/.vuepress/dist
+                git init
+                git add -A
                 git commit -m "auto build by CircleCI"
-                git pull
-                git push --set-upstream origin gh-pages
+                git checkout gh-pages
+                git push -f origin gh-pages
 
 workflows:
   # Below is the definition of your workflow.
