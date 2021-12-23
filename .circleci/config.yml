@@ -29,18 +29,16 @@ jobs:
       - node/install-packages:
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
+      - run: git checkout gh-pages
       - run:
           name: Build docs
           command: npm run docs:build
       - run:
           name: push dist to gh-pages
           command: |
-                git config --global user.email "519248932@qq.com"
-                git config --global user.name "bennyli"
                 git add .
                 git commit -m "auto build by CircleCI"
-                git checkout gh-pages
-                git push origin gh-pages -f
+                git push -f
 
 workflows:
   # Below is the definition of your workflow.
