@@ -34,13 +34,12 @@ jobs:
           name: Build and push dist to gh-pages
           command: |
                 git config --global user.email "519248932@qq.com"
-                git config --global user.name "Bennyli"
+                git config --global user.name "bennyli519"
                 cd docs/.vuepress/dist
                 git init
                 git add -A
                 git commit -m "auto build by CircleCI"
-                git checkout gh-pages
-                git push -f origin gh-pages
+                git push -f git@github.com:bennyli519/blog.git master:gh-pages
 
 workflows:
   # Below is the definition of your workflow.
