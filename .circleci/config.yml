@@ -39,6 +39,7 @@ jobs:
                 npm run docs:build
                 git add .
                 git commit -m "auto build by CircleCI"
+                git pull
                 git push --set-upstream origin gh-pages
 
 workflows:
