@@ -38,7 +38,7 @@ jobs:
                 cd docs/.vuepress/dist
                 git init
                 git add -A
-                git commit -m "auto build by CircleCI"
+                git commit -m "auto build by CircleCI[ci skip]"
                 git push -f git@github.com:bennyli519/blog.git master:gh-pages
 
 workflows:
