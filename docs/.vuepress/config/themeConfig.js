@@ -64,14 +64,14 @@ module.exports = {
   //         facetFilters: ''
   //     }
   // },
-  lastUpdated: '上次更新',
+  // lastUpdated: '上次更新',
   // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-  repo: 'https://gitee.com/bennyli/blog',
+  repo: 'https://github.com/bennyli519/blog',
   repoLabel: 'git',
   // 以下为可选的编辑链接选项
   // 假如文档不是放在仓库的根目录下：
   docsDir: 'docs',
   // 默认是 false, 设置为 true 来启用
   editLinks: true,
-  editLinkText: '在 Gitee 上编辑此页',
+  editLinkText: '在 Github 上编辑此页',
 };

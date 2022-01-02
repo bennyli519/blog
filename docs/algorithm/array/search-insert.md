@@ -1,22 +1,16 @@
-<!--
- * @Author: Benny
- * @Date: 2021-12-27 23:02:09
- * @Description: 
- * @LastEditTime: 2021-12-29 21:56:45
--->
 ---
-title: 【35】搜索插入位置
-date: 2021-11-28
+title: 35.搜索插入位置
+date: 2021-11-27
 tags:
- - algorithm
  - 二分法
 categories: 
- - algorithm
+ - 算法
 ---
 
-### 搜索插入位置
-https://leetcode-cn.com/problems/search-insert-position/
-> 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+[35.搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
+::: tip 
+给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+:::
 
 #### 示例1
 ```

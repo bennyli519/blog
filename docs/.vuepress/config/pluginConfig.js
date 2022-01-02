@@ -1,3 +1,9 @@
+/*
+ * @Author: Benny
+ * @Date: 2021-12-24 00:19:57
+ * @Description: 
+ * @LastEditTime: 2022-01-03 00:25:09
+ */
 const secretKeyConfig = require('./secretKeyConfig.js');
 module.exports = {
   "vuepress-plugin-auto-sidebar": {},

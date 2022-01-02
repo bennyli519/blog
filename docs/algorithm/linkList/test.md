@@ -1,11 +1,10 @@
 ---
 title: 【x】链表
-date: 2021-11-26
+date: {}
 tags:
  - 链表
 categories: 
- - algorithm
- - 链表
+ - 算法
 ---
 
 相关内容111
