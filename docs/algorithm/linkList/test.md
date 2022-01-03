@@ -1,6 +1,5 @@
 ---
 title: 【x】链表
-date: {}
 tags:
  - 链表
 categories: 
