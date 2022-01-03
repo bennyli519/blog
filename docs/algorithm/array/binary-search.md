@@ -1,5 +1,5 @@
 ---
-title: 704.二分查找
+title: 704. 二分查找
 date: 2021-11-27
 sidebar: 'false'
 tags:
@@ -8,7 +8,7 @@ categories:
  - 算法
 ---
 
-[704.二分查找](https://leetcode-cn.com/problems/binary-search/)
+[leetcode传送门](https://leetcode-cn.com/problems/binary-search/)
 ::: tip 
 给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
 :::
